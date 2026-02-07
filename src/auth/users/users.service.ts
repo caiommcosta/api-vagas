@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { LoginDto } from './dto/login.dto';
+import { LoginDto } from '../dto/login.dto';
 
 // This should be a real class/interface representing a user entity
 export type User = any;
@@ -9,11 +9,11 @@ export class UsersService {
   private readonly users = [
     {
       email: 'manager@example.com',
-      password: '1234',
+      password: '123456',
     },
     {
       email: 'recruiter@example.com',
-      password: '1234',
+      password: '123456',
     },
   ];
 
